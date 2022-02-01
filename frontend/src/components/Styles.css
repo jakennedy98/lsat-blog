@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Roboto+Condensed:wght@300&family=Roboto:ital,wght@0,300;1,300&display=swap');
+/* Navigation area */
+
+:root {
+    --blue: rgb(107, 178, 249);
+    --pink: palevioletred;
+}
+
+.nav {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    position: fixed;
+    top: 0;
+    background-color: white;
+
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-list > * {
+    margin: 20px;
+    cursor: pointer;
+}
+
+.logo { 
+    font-size: 35px;
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    cursor: default;
+}
+
+
+/* Header area */
+
+.header-area {
+    height: 40vw;
+    background-color: var(--blue);
+    margin: 0px 20px;
+    margin-top: 80px;
+}
+
+/* Recent blog area */
+
+.recent-blog-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    margin: 20px;
+}
+
+
+.recent-blog-wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.recent-blog {
+    height: 30vw;
+    width: 100%;
+    background-color: var(--pink);
+    display: grid;
+    grid-template-areas: 
+        "thumbnail"
+        "description";
+    grid-template-rows: 80% 20%;
+}
+
+@media only screen and (max-width: 1100px) {
+    .recent-blog-area {
+        grid-template-columns: 1fr 1fr;
+    }
+    .recent-blog {
+        height: 40vw;
+    }
+  }
+
+@media only screen and (max-width: 768px) {
+    .recent-blog-area {
+        grid-template-columns: 1fr;
+    }
+    .recent-blog {
+        height: 60vw;
+    }
+}
+
+.recent-blog:hover {
+   cursor: pointer;
+   background-color: rgb(203, 58, 106);
+}
+
+
+.recent-blog-thumbnail {
+    width: 100%;
+    background-color: var(--pink);
+}
+
+.recent-blog-description {
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding-top: 1vw;
+}
+
+.recent-blog-title {
+    font-weight: 700;
+    font-size: 1.6vw;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.recent-blog-date {
+    font-size: 1.4vw;
+}
+
+.recent-blog-icon {
+    border: 1px solid rgb(1, 190, 1);
+    width: 40px;
+    height: 18px;
+}
+
+/* Footer area */
+
+.footer {
+    height: 150px;
+    width: 100%;
+    background-color: var(--blue);
+}
