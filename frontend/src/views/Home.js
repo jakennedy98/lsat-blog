@@ -1,8 +1,8 @@
 import React from 'react';
-import Nav from "../components/Nav"
-import Header from "../components/Header"
-import RecentBlogs from "../components/RecentBlogs"
-import Footer from "../components/Footer"
+import Nav from "../components/global/Nav"
+import Header from "../components/home/Header"
+import RecentBlogs from "../components/home/RecentBlogs"
+import Footer from "../components/global/Footer"
 
 const Home = () => {
     return (
