@@ -1,3 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Roboto+Condensed:wght@300&family=Roboto:ital,wght@0,300;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans:wght@300&display=swap');
+
 .about-me-card{
     margin-top: 80px;
+}
+
+/* Article area */
+
+
+.article-main {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+}
+
+.article-title {
+    align-self: center;
+    font-weight: 700;
+    font-size: 56px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+}
+
+.article-content {
+    margin-top: 20px;
+    font-size: 18px;
+
+
+}
+
+.article-image {
+    border-radius: 4px;
+}
+
+.author-area {
+    display: grid;
+    grid-template-areas: 
+        "photo name"
+        "photo date";
+    grid-template-columns: 48px 200px;
+    align-items: center;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    margin-top: 20px;
+ 
+}
+
+.author-area__photo {
+    border-radius: 50%;
+    grid-area: photo;
+}
+
+.author-area__name {
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    padding-top: 4px;
+}
+
+.author-area__date {
+    grid-area: date;
+    font-weight: 100;
+    padding-bottom: 4px;
+}
+
+.sidebar-area {
+    width: 40px;
+    height: 80vh;
+    grid-area: sidebar-left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    left: 24px;
+    top: 40%;
+}
+
+.sidebar-area > * {
+    cursor: pointer;
+    padding-top: 20px;
+}
+
+@media only screen and (max-width: 1100px) {
+    .sidebar-area {
+        display: none;
+    }
+  }
+
+/* Additional Information Area*/
+
+.additional-lessons {
+    width: 100%;
+    height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.additional-lessons__header {
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.additional-lessons__wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.additional-lessons__article {
+    height: 300px;
+    width: 300px;
+    margin: 20px;
+    cursor: pointer;
+
+}
+
+.additional-lessons__image{
+    transform: scale(1.1);
+    transition-duration: 500ms;
+    transition-property: transform;
+}
+
+.additional-lessons__image-wrapper{
+    width: 300px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.additional-lessons__description{
+    margin-top: 8px;
+    padding-left: 4px;
+    font-weight: 500;
+    font-size: 16px;
+
+}
+
+.additional-lessons__image:hover {
+    transform: scale(1);
+    
+    overflow: hidden;
+    transition-duration: 500ms;
+    transition-property: transform;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .additional-lessons__article {
+        height: 250px;
+        width: 250px;
+       
+    }
+  }
+
+  .additional-lessons__title {
+    font-family: "ROBOTO";
+    font-weight: 700;
+}
+
+/* News Letter Area*/
+
+.newsletter{
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3f3f3;
+}
+
+.newsletter__input{
+    height: 60px;
+    width: 400px;
+    border: none;
+    padding-left: 10px;
+   
 }

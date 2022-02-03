@@ -13,7 +13,7 @@ function RecentBlogs() {
                         <div className = "recent-blog-title">
                             <div>How to break down an argument</div>
                         </div>
-                      <div className = "recent-blog-date">Published on: December 7, 2021</div>
+                    
                   </div>
               </div>
             </div>
@@ -27,7 +27,7 @@ function RecentBlogs() {
                         <div className = "recent-blog-title">
                             <div>Sufficient and Necessary Conditions</div>
                         </div>
-                      <div className = "recent-blog-date">Published on: December 2, 2021</div>
+                     
                   </div>
               </div>
             </div>
@@ -41,7 +41,7 @@ function RecentBlogs() {
                         <div className = "recent-blog-title">
                             <div>What to look out for in a weaken question</div>
                         </div>
-                      <div className = "recent-blog-date">Published on: December 1, 2021</div>
+                    
                   </div>
               </div>
             </div>

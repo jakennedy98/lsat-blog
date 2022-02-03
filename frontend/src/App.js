@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Home from "./views/Home"
 import AboutMe from "./views/AboutMe"
-import Blogs from "./views/Blogs"
+import Blogs from "./views/blogs/Blogs"
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
