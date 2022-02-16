@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Roboto+Condensed:wght@300&family=Roboto:ital,wght@0,300;1,300&display=swap');
+/* Navigation area */
+
+:root {
+    --blue: rgb(107, 178, 249);
+    --pink: palevioletred;
+    --nav-height: 80px;
+    --header-height: 540px;
+}
+
+.nav {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 0px;
+}
+
+.nav-list > * {
+    margin: 20px;
+    cursor: pointer;
+}
+
+.logo { 
+    font-size: 28px;
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    cursor: default;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: black;
+}
+
+.mobile-nav-list {
+    display: none;
+    list-style-type: none;
+    width: 100%;
+}
+
+.mobile-nav-list > .logo {
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .mobile-nav-list{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px 40px 0px 24px;
+    } 
+    .nav-list {
+        display: none;
+    }
+}  
+
+.hamburger-menu {
+    z-index: 200;
+    transition-duration: 800ms;
+    transition-property: transform;
+   
+}
+
+.hamburger-menu:hover {
+    cursor: pointer;
+}
+
+/* Footer area */
+
+.footer {
+    height: 150px;
+    width: 100%;
+    background-color: var(--blue);
+}
+
+.menu {
+    width: 100vw;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    transform: translateX(-100%);
+    transition-duration: 800ms;
+    transition-property: transform;
+    z-index: 1;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.menu__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 22%;
+    cursor: pointer;
+    font-size: 28px;
+    font-family: "Roboto", "Helvetica Neue";
+    color: black;
+    text-decoration: none;
+    height: 20vh;
+}
+
+.menu__link:hover {
+   color:rgb(107, 178, 249);
+}
+
+.menu__links {
+    color: white;
+    list-style: none;
+    height: 100%;
+}
+
+.lock-scroll {
+    overflow: hidden;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .menu{
+        display: none;
+    } 
+    .lock-scroll {
+        overflow: visible;
+    }
+   
+}  

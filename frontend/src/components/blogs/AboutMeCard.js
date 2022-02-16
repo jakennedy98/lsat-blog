@@ -5,8 +5,6 @@ const AboutMeCard = () => {
     return (
         <div className="about-me-card">
                  <img src="/face.jpeg" height="100px"></img>
-            
-            
         </div>
     )
 }
